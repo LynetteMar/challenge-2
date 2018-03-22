@@ -1,0 +1,142 @@
+@media only screen and (min-width: 840px) {
+
+     h1{
+        font-family: 'Allerta Stencil', sans-serif;
+        color: white;
+        font-size: 40px;
+    }
+
+    h1 i{
+        font-style: italic;
+    }
+
+
+    h2{
+        font-family: 'Muli', sans-serif;
+        color: white;
+        font-size: 35px;
+        font-weight: 800;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    h2 i{
+        font-style: italic;
+    }
+
+    h3{
+        font-family: 'Muli', sans-serif;
+        color: white;
+        font-size: 20px;
+        font-weight: 100;
+        letter-spacing: 10px;
+    }
+
+    h4{
+        font-family: 'Muli', sans-serif;
+        color: white;
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: -0.03em;
+        font-style: italic;
+    }
+
+    h6{
+        font-family: 'Muli', sans-serif;
+        color: white;
+        font-size: 25px;
+        font-weight: 500;
+        text-decoration: underline;
+        text-transform: uppercase
+    }
+
+    p{
+        font-family: 'Muli', sans-serif;
+        color: white;
+        font-size: 18px;
+    }
+
+    button{
+        margin: 30px 5px 0 2px;
+        padding: 16px 20px;
+        font-size: 14px;
+        font-weight: 900;
+        border: none;
+        background: #E5C7EB;
+        color: black;
+        cursor: pointer;
+        font-family: 'Muli', sans-serif;
+    }
+
+    button:hover, button:focus{
+        background: #5E5375;
+        color: white;
+    }
+
+    .grid-container /*body*/{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+        grid-gap: 0px;
+
+        grid-template-areas: 
+            "title wel"
+            "count count"
+            /*"dash"*/
+            /*"info"*/
+            "dis stock";
+    }
+
+    /*GRID AREAS*/
+
+    .title{
+        grid-area: title;
+    } 
+
+    .dash{
+        padding-top: 40px;
+        grid-area: dash;
+    }
+
+
+    .info{
+        grid-area: info;
+    }
+
+    .distance{
+        grid-area: dis;
+        text-align: center;
+    }
+    
+    .distance h3, .distance h4{
+        text-align: left;
+    }
+    
+    #distance-animation{
+        width: 400px;
+        text-align: center;
+    }
+
+    .stock{
+        grid-area: stock;
+        text-align: center;
+    }
+
+    .stock h3, .stock h4{
+        text-align: left;
+    }
+
+    .countdown{
+        grid-area: count;
+    }
+
+    .welcome{
+        grid-area: wel;
+    }
+    
+    #water-animation{
+    width: 300px;
+    }
+
+    /*GRID AREAS*/
+}
