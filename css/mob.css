@@ -4,8 +4,9 @@
 
 
 body{
-/*    background-color: #0C0C38;*/
-    background-color: #FFD100;
+    background-color: #FCA02E;
+    height: 100vh;
+    overflow: hidden;
 }
 
 h1{
@@ -18,7 +19,6 @@ h1 i{
     font-style: italic;
 }
 
-
 h2{
     font-family: 'Muli', sans-serif;
     color: white;
@@ -26,36 +26,6 @@ h2{
     font-weight: 800;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-h2 i{
-    font-style: italic;
-}
-
-h3{
-    font-family: 'Muli', sans-serif;
-    color: white;
-    font-size: 20px;
-    font-weight: 100;
-    letter-spacing: 10px;
-}
-
-h4{
-    font-family: 'Muli', sans-serif;
-    color: white;
-    font-size: 18px;
-    font-weight: 300;
-    letter-spacing: -0.03em;
-    font-style: italic;
-}
-
-h6{
-    font-family: 'Muli', sans-serif;
-    color: white;
-    font-size: 25px;
-    font-weight: 500;
-    text-decoration: underline;
-    text-transform: uppercase
 }
 
 p{
@@ -106,13 +76,22 @@ button:hover, button:focus{
 #txt{
     font-size: 20px;
     font-family: 'Muli', sans-serif;
+    color: rgba(255,255,255,0.4)
 }
 
-#moon, #sun{
-    width: 200px;
+
+
+#sun{
+    position: relative;
+    width: 300px;
+    top: -100;
 }
+
+
 #moon{
-    opacity: 0;
+    position: relative
+    top: -150px;
+    width: 200px;
 }
 
 

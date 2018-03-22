@@ -17,12 +17,12 @@ function checkTime(i) {
 var txt = document.getElementById('txt');
 
 var tl1 = new TimelineMax();
-tl1.to(txt, 2, {fontSize: 90});
+tl1.to(txt, 2, {fontSize: 50});
 //tl1.from(mainHeading, 2, {fontSize: 100});
 
-TweenMax.to("#sun", 5, {opacity:0, y: 20,  repeat:-1, yoyo:true});
-TweenMax.to("#moon", 5, {opacity:1, y: 150,  repeat:-1, yoyo:true});
+TweenMax.to("#sun", 10, {opacity:0, y: 600,  repeat:-1, yoyo:true});
+TweenMax.from("#moon", 10, {opacity:0, y: 600,  repeat:-1, yoyo:true});
 
-TweenMax.to(".body", 5, {backgroundColor:"#0C0C38", y: 70,  repeat:-1, yoyo:true});
+TweenMax.to(".body", 10, {backgroundColor:"#0C0C38", repeat:-1, yoyo:true});
 
 
